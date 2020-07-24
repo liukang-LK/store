@@ -1,0 +1,4 @@
+com\kakarot\Application.class
+com\kakarot\controller\TestStuController.class
+com\kakarot\controller\PassportController.class
+com\kakarot\controller\HelloController.class
