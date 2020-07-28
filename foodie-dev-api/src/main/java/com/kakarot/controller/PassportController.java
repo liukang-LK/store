@@ -4,11 +4,14 @@ import com.kakarot.pojo.Users;
 import com.kakarot.pojo.bo.UserBO;
 import com.kakarot.service.UsersService;
 import com.kakarot.utils.IMOOCJSONResult;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+@Api(value="注册登录",tags = {"用于注册登录的相关接口"})
 @RestController
 @RequestMapping("passport")
 public class PassportController {
@@ -16,6 +19,7 @@ public class PassportController {
     @Autowired
     private UsersService usersService;
 
+    @ApiOperation(value = "用户名是否存在",notes = "用户名是否存在",httpMethod = "GET")
     @GetMapping("/usernameIsExist")
     public IMOOCJSONResult usernameIsExist(@RequestParam String username){
 
@@ -34,6 +38,7 @@ public class PassportController {
         return IMOOCJSONResult.ok();
     }
 
+    @ApiOperation(value = "用户注册",notes = "用户注册",httpMethod = "POST")
     @PostMapping("/regist")
     public IMOOCJSONResult regist(@RequestBody UserBO userBO){
 
