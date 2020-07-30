@@ -26,7 +26,7 @@ public class UsersServiceImpl implements UsersService {
     @Autowired
     private Sid sid;
 
-    private static final String USER_FACE = "https://imgur.com/QZ2e0Mt";
+    private static final String USER_FACE = "https://i.imgur.com/QZ2e0Mt.jpg";
 
     /**
      * 判断数据库是否存在此username
@@ -84,6 +84,26 @@ public class UsersServiceImpl implements UsersService {
 
         usersMapper.insert(user);
         return user;
+    }
+
+    /**
+     * 用户登录
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public Users queryUserForLogin(String username,String password){
+
+        //1.example用来放一些去重，排序，分类，分页等信息
+        Example userExample = new Example(Users.class);
+        //2.criteria用来传字段参数
+        Example.Criteria userCriteria = userExample.createCriteria();
+
+        userCriteria.andEqualTo("username",username);
+        userCriteria.andEqualTo("password",password);
+
+        Users result = usersMapper.selectOneByExample(userExample);
+
+        return result;
     }
 
 }

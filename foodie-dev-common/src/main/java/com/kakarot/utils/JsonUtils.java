@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
 
 /**
- * 
+ * springboot内置jackson
  * @Title: JsonUtils.java
  * @Package com.imooc.utils
  * @Description: json转换类

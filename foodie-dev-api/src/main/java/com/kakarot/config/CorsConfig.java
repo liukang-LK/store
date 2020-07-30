@@ -6,6 +6,10 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+/**
+ * 跨域请求，对响应的设置，浏览器根据响应头部的一些信息才可以判断能否跨域请求到数据
+ */
+
 @Configuration
 public class CorsConfig {
 
@@ -15,9 +19,15 @@ public class CorsConfig {
 
     @Bean
     public CorsFilter corsFilter(){
+
         //1、添加cors配置信息
         CorsConfiguration config = new CorsConfiguration();
+
         config.addAllowedOrigin("http://localhost:8080");
+        config.addAllowedOrigin("http://shop.z.liukang.space:8080");
+        config.addAllowedOrigin("http://center.z.liukang.space:8080");
+        config.addAllowedOrigin("http://shop.z.liukang.space");
+        config.addAllowedOrigin("http://center.z.liukang.space");
 
         // 设置是否发送cookie信息
         config.setAllowCredentials(true);

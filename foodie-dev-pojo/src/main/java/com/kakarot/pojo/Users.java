@@ -1,5 +1,7 @@
 package com.kakarot.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -57,7 +59,9 @@ public class Users {
 
     /**
      * 创建时间 创建时间
+     * JsonIgnore :封装为json返回到前端时，不会显示createdTime信息
      */
+    @JsonIgnore
     @Column(name = "created_time")
     private Date createdTime;
 
