@@ -56,17 +56,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <!-- 打包war [2] 移除自带内置tomcat -->
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
+            <!--<exclusions>-->
+            <!--    <exclusion>-->
+            <!--        <artifactId>spring-boot-starter-tomcat</artifactId>-->
+            <!--        <groupId>org.springframework.boot</groupId>-->
+            <!--    </exclusion>-->
+            <!--</exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+        <!--配置文件处理器，写配置文件有提示-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -127,7 +128,7 @@
             <version>1.6</version>
         </dependency>
 
-        <!--引入日志依赖 抽象层 与 实现层-->
+        <!--引入日志依赖 抽象层slf4j 与 实现层log4j-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.test.TestTrans
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.139 s <<< FAILURE! - in com.test.TestTrans
-initializationError(com.test.TestTrans)  Time elapsed: 0.004 s  <<< ERROR!
-java.lang.Exception: No runnable methods
-

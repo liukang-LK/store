@@ -1,11 +1,16 @@
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\Items.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\Carousel.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\Orders.java
+D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\bo\UserBO.java
+D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\vo\SubCategoryVO.java
+D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\vo\CategoryVO.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\TestStu.java
+D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\vo\SimpleItemVO.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\Users.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\ItemsSpec.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\ItemsComments.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\ItemsImg.java
+D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\vo\NewItemsVO.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\OrderStatus.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\OrderItems.java
 D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\ItemsParam.java
