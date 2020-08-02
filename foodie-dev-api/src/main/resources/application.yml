@@ -55,3 +55,7 @@ mapper:
   mappers: com.kakarot.my.mapper.MyMapper
   not-empty: false                               #在进行数据库操作的时候，判断表达式 username!=null,是否追加username!=''
   identity: MYSQL
+# 分页插件配置
+pagehelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
