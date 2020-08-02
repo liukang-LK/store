@@ -7,6 +7,7 @@ import com.kakarot.mapper.*;
 import com.kakarot.pojo.*;
 import com.kakarot.pojo.vo.CommentLevelCountsVO;
 import com.kakarot.pojo.vo.ItemCommentVO;
+import com.kakarot.pojo.vo.searchItemsVO;
 import com.kakarot.service.ItemService;
 import com.kakarot.utils.DesensitizationUtil;
 import com.kakarot.utils.PagedGridResult;
@@ -163,5 +164,49 @@ public class ItemServiceImpl implements ItemService {
         grid.setRecords(pageList.getTotal());
 
         return grid;
+    }
+
+    /**
+     * 搜索商品列表
+     * @param keywords
+     * @param sort
+     * @param page
+     * @param pageSize
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public PagedGridResult searchItems(String keywords, String sort, Integer page, Integer pageSize) {
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("keywords",keywords);
+        map.put("sort",sort);
+
+        PageHelper.startPage(page, pageSize);
+
+        List<searchItemsVO> list = itemsMapperCustom.searchItems(map);
+
+        return setterPagedGrid(list,page);
+    }
+
+    /**
+     * 根据分类搜索商品列表
+     * @param catId
+     * @param sort
+     * @param page
+     * @param pageSize
+     * @return
+     */
+    @Override
+    public PagedGridResult searchItems(Integer catId, String sort, Integer page, Integer pageSize) {
+        Map<String,Object> map = new HashMap<>();
+        map.put("catId",catId);
+        map.put("sort",sort);
+
+        PageHelper.startPage(page, pageSize);
+
+        List<searchItemsVO> list = itemsMapperCustom.searchItemsByThirdCat(map);
+
+        return setterPagedGrid(list,page);
     }
 }
