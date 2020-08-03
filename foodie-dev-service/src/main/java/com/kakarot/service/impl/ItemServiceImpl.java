@@ -7,6 +7,7 @@ import com.kakarot.mapper.*;
 import com.kakarot.pojo.*;
 import com.kakarot.pojo.vo.CommentLevelCountsVO;
 import com.kakarot.pojo.vo.ItemCommentVO;
+import com.kakarot.pojo.vo.ShopcartVO;
 import com.kakarot.pojo.vo.searchItemsVO;
 import com.kakarot.service.ItemService;
 import com.kakarot.utils.DesensitizationUtil;
@@ -17,9 +18,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -197,6 +196,7 @@ public class ItemServiceImpl implements ItemService {
      * @param pageSize
      * @return
      */
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public PagedGridResult searchItems(Integer catId, String sort, Integer page, Integer pageSize) {
         Map<String,Object> map = new HashMap<>();
@@ -208,5 +208,21 @@ public class ItemServiceImpl implements ItemService {
         List<searchItemsVO> list = itemsMapperCustom.searchItemsByThirdCat(map);
 
         return setterPagedGrid(list,page);
+    }
+
+    /**
+     * 根据规格ids查询最新的购物车中商品数据（用于刷新渲染购物车中的商品数据）
+     * @param specIds
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<ShopcartVO> queryItemsBySpecIds(String specIds) {
+
+        String[] ids = specIds.split(",");
+        ArrayList<Object> specIdsList = new ArrayList<>();
+        Collections.addAll(specIdsList,ids);
+
+        return itemsMapperCustom.queryItemsBySpecIds(specIdsList);
     }
 }

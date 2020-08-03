@@ -6,6 +6,7 @@ import com.kakarot.pojo.ItemsParam;
 import com.kakarot.pojo.ItemsSpec;
 import com.kakarot.pojo.vo.CommentLevelCountsVO;
 import com.kakarot.pojo.vo.ItemInfoVO;
+import com.kakarot.pojo.vo.ShopcartVO;
 import com.kakarot.service.ItemService;
 import com.kakarot.utils.IMOOCJSONResult;
 import com.kakarot.utils.PagedGridResult;
@@ -151,6 +152,22 @@ public class ItemsController extends BaseController{
         PagedGridResult grid = itemService.searchItems(catId, sort, page, pageSize);
 
         return IMOOCJSONResult.ok(grid);
+    }
+
+    //用于用户长时间未登陆网站，刷新购物车中的数据（主要是商品价格），类似京东淘宝
+    @ApiOperation(value="根据商品规则ids查找最新的商品数据",notes = "根据商品规则ids查找最新的商品数据",httpMethod = "GET")
+    @GetMapping("/refresh")
+    public IMOOCJSONResult refresh(
+            @ApiParam(name="itemSpecIds",value = "拼接的规格ids",required = true,example = "1001,1003,1005")
+            @RequestParam String itemSpecIds){
+
+        if(StringUtils.isBlank(itemSpecIds)){
+            return IMOOCJSONResult.ok();
+        }
+
+        List<ShopcartVO> list = itemService.queryItemsBySpecIds(itemSpecIds);
+
+        return IMOOCJSONResult.ok(list);
     }
 
 }
