@@ -3,6 +3,7 @@ package com.kakarot.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.kakarot.enums.CommentLevel;
+import com.kakarot.enums.YesOrNo;
 import com.kakarot.mapper.*;
 import com.kakarot.pojo.*;
 import com.kakarot.pojo.vo.CommentLevelCountsVO;
@@ -224,5 +225,65 @@ public class ItemServiceImpl implements ItemService {
         Collections.addAll(specIdsList,ids);
 
         return itemsMapperCustom.queryItemsBySpecIds(specIdsList);
+    }
+
+    /**
+     * 根据商品规格id获取规格对象的具体信息
+     * @param specId
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public ItemsSpec queryItemSpecById(String specId) {
+        return itemsSpecMapper.selectByPrimaryKey(specId);
+    }
+
+    /**
+     * 根据商品id获得商品图片主图url
+     * @param itemId
+     * @return
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public String queryItemMainImgById(String itemId) {
+        ItemsImg itemsImg = new ItemsImg();
+        itemsImg.setItemId(itemId);
+        itemsImg.setIsMain(YesOrNo.YES.type);
+        ItemsImg result = itemsImgMapper.selectOne(itemsImg);
+        return result != null ? result.getUrl() : "";
+    }
+
+    /**
+     * 减少库存
+     * @param specId
+     * @param buyCounts
+     */
+    @Override
+    public void decreaseItemSpecStock(String specId, int buyCounts) {
+
+        // synchronized 不推荐使用，集群下无用，性能低下
+        // 锁数据库: 不推荐，导致数据库性能低下
+        // 分布式锁 zookeeper redis
+
+        // lockUtil.getLock(); -- 加锁
+
+        // 1. 查询库存
+        // int stock = 10;
+
+        // 2. 判断库存，是否能够减少到0以下
+        // if (stock - buyCounts < 0) {
+        // 提示用户库存不够
+        // 10 - 3 -3 - 5 = -1
+        // }
+
+        // lockUtil.unLock(); -- 解锁
+
+
+        int result = itemsMapperCustom.decreaseItemSpecStock(specId, buyCounts);
+        //result即是数据库更新数据的数量。这里如果更新成功，会返回1；没有更新，则返回0
+        if (result != 1) {
+            throw new RuntimeException("订单创建失败，原因：库存不足!");
+        }
+
     }
 }
