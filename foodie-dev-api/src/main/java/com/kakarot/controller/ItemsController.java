@@ -87,7 +87,7 @@ public class ItemsController extends BaseController{
             page=1;
         }
         if(pageSize == null){
-            pageSize=COMMENT_PAGE_SIZE;
+            pageSize=COMMON_PAGE_SIZE;
         }
 
         //level在mapping中判断
