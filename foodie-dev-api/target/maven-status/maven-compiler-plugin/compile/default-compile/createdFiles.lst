@@ -1,8 +1,0 @@
-com\kakarot\aspect\ServiceLogAspect.class
-com\kakarot\config\Swagger2.class
-com\kakarot\Application.class
-com\kakarot\controller\IndexController.class
-com\kakarot\config\CorsConfig.class
-com\kakarot\controller\TestStuController.class
-com\kakarot\controller\PassportController.class
-com\kakarot\controller\HelloController.class

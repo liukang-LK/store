@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a012b56-d3c8-4b68-8d74-26bda1455135" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/kakarot/enums/YesOrNo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/kakarot/mapper/CategoryMapperCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/CategoryMapperCustom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/kakarot/pojo/vo/CategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/kakarot/pojo/vo/NewItemsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/kakarot/pojo/vo/SimpleItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/kakarot/pojo/vo/SubCategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/CarouselService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/impl/CarouselServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="2a012b56-d3c8-4b68-8d74-26bda1455135" name="Default Changelist" comment="[功能新增] 上传头像功能。静态资源映射、限制大小、自定义捕获异常...">
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/kakarot/pojo/vo/OrderStatusCountsVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/WarStarterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/WarStarterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/controller/center/MyOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/controller/center/MyOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/resource/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/kakarot/resource/FileUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/file-upload-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/file-upload-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/profiles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/profiles.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/controller/PassportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/classes/com/kakarot/controller/PassportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/foodie-dev-api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/surefire-reports/TEST-com.test.TestTrans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-api/target/surefire-reports/com.test.TestTrans.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-common/target/foodie-dev-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-common/target/foodie-dev-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-mapper/target/classes/META-INF/foodie-dev-mapper.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-mapper/target/foodie-dev-mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-mapper/target/foodie-dev-mapper-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/classes/META-INF/foodie-dev-pojo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/classes/com/kakarot/pojo/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/classes/com/kakarot/pojo/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/classes/com/kakarot/pojo/bo/UserBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/classes/com/kakarot/pojo/bo/UserBO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/foodie-dev-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/foodie-dev-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/center/MyOrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/center/MyOrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/impl/center/MyOrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/kakarot/service/impl/center/MyOrdersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-service/target/foodie-dev-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-service/target/foodie-dev-service-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -107,14 +89,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.kakarot.my.mapper" />
+      <recent name="com.kakarot.pojo.vo" />
+      <recent name="com.kakarot.pojo.bo.center" />
+      <recent name="com.kakarot.mapper" />
+      <recent name="com.kakarot.enums" />
+      <recent name="com.kakarot.pojo.bo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-mapper\src\main\resources\mapper" />
+      <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo\vo" />
       <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-api\src\main\resources" />
       <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-common\src\main\java" />
       <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-common\src\main\java\com\kakarot\utils" />
-      <recent name="D:\Work\Learn\Project\foodie-dev\foodie-dev-pojo\src\main\java\com\kakarot\pojo" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -202,7 +188,17 @@
       <workItem from="1596164070927" duration="9488000" />
       <workItem from="1596191145238" duration="4150000" />
       <workItem from="1596247769655" duration="3290000" />
-      <workItem from="1596271848241" duration="11925000" />
+      <workItem from="1596271848241" duration="12000000" />
+      <workItem from="1596338047439" duration="20830000" />
+      <workItem from="1596422948798" duration="3480000" />
+      <workItem from="1596427308649" duration="94000" />
+      <workItem from="1596508829864" duration="88000" />
+      <workItem from="1596539618359" duration="9916000" />
+      <workItem from="1596697014784" duration="8866000" />
+      <workItem from="1596724344798" duration="2129000" />
+      <workItem from="1596773715376" duration="13102000" />
+      <workItem from="1596854269612" duration="25288000" />
+      <workItem from="1596887844651" duration="6424000" />
     </task>
     <task id="LOCAL-00001" summary="[新增功能] 配置swagger2 API文档，配置cors跨域">
       <created>1595913348949</created>
@@ -218,7 +214,105 @@
       <option name="project" value="LOCAL" />
       <updated>1596119987948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[功能新增] 商品分类与展示">
+      <created>1596293696465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596293696465</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[功能新增] 商品详细信息展示">
+      <created>1596341066348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596341066349</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[功能新增] 商品评价信息展示">
+      <created>1596353506433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596353506433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[功能新增] 搜索功能">
+      <created>1596377056731</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596377056731</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[功能新增] 购物车功能">
+      <created>1596427366760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596427366760</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[功能新增] 收货地址功能">
+      <created>1596547004197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596547004197</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[功能新增] 创建订单功能">
+      <created>1596705634422</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596705634422</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[功能新增] 微信支付功能">
+      <created>1596797503737</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596797503737</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[功能新增] 定时任务">
+      <created>1596803580159</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596803580159</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[功能新增] 用户中心数据查询、修改、Hibernate验证">
+      <created>1596859513314</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596859513314</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[功能新增] 上传头像功能。静态资源映射、限制大小、自定义捕获异常...">
+      <created>1596869976758</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596869976758</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[功能新增] 订单管理功能。映射结果拆分解决分页bug">
+      <created>1596877814109</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596877814109</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[功能新增] 商品评价功能。sql循环插入语句。">
+      <created>1596881830949</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596881830949</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[功能新增] '我的评价'功能">
+      <created>1596890361524</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596890361524</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +334,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[新增功能] 配置swagger2 API文档，配置cors跨域" />
     <MESSAGE value="[部署] 项目部署的一些配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="[部署] 项目部署的一些配置" />
+    <MESSAGE value="[功能新增] 商品分类与展示" />
+    <MESSAGE value="[功能新增] 商品详细信息展示" />
+    <MESSAGE value="[功能新增] 商品评价信息展示" />
+    <MESSAGE value="[功能新增] 搜索功能" />
+    <MESSAGE value="[功能新增] 购物车功能" />
+    <MESSAGE value="[功能新增] 收货地址功能" />
+    <MESSAGE value="[功能新增] 创建订单功能" />
+    <MESSAGE value="[功能新增] 微信支付功能" />
+    <MESSAGE value="[功能新增] 定时任务" />
+    <MESSAGE value="[功能新增] 用户中心数据查询、修改、Hibernate验证" />
+    <MESSAGE value="[功能新增] 上传头像功能。静态资源映射、限制大小、自定义捕获异常..." />
+    <MESSAGE value="[功能新增] 订单管理功能。映射结果拆分解决分页bug" />
+    <MESSAGE value="[功能新增] 商品评价功能。sql循环插入语句。" />
+    <MESSAGE value="[功能新增] '我的评价'功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="[功能新增] '我的评价'功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Inspections" timestamp="1595409185397">
@@ -251,18 +359,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1595397307610" />
-    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser" timestamp="1596293030269">
+    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser" timestamp="1596891605697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596293030269" />
+    <state x="574" y="0" width="495" height="824" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596891605697" />
     <state x="345" y="312" width="485" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596278318240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="345" y="312" width="485" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1596278318240" />
-    <state x="303" y="6" key="CommitChangelistDialog2" timestamp="1596119986451">
+    <state x="303" y="6" key="CommitChangelistDialog2" timestamp="1596890360199">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="303" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596119986451" />
+    <state x="303" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596890360199" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1596276636872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,66 +379,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595508693970" />
-    <state width="1493" height="332" key="GridCell.Tab.0.bottom" timestamp="1596293649713">
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom" timestamp="1596894952605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596293649713" />
-    <state width="1493" height="332" key="GridCell.Tab.0.center" timestamp="1596293649713">
+    <state width="1493" height="275" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596894952605" />
+    <state width="1493" height="275" key="GridCell.Tab.0.center" timestamp="1596894952604">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596293649713" />
-    <state width="1493" height="332" key="GridCell.Tab.0.left" timestamp="1596293649713">
+    <state width="1493" height="275" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596894952604" />
+    <state width="1493" height="275" key="GridCell.Tab.0.left" timestamp="1596894952604">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596293649713" />
-    <state width="1493" height="332" key="GridCell.Tab.0.right" timestamp="1596293649713">
+    <state width="1493" height="275" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596894952604" />
+    <state width="1493" height="275" key="GridCell.Tab.0.right" timestamp="1596894952605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596293649713" />
-    <state width="1493" height="332" key="GridCell.Tab.1.bottom" timestamp="1596293635739">
+    <state width="1493" height="275" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596894952605" />
+    <state width="1493" height="84" key="GridCell.Tab.1.bottom" timestamp="1596894933721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596293635739" />
-    <state width="1493" height="332" key="GridCell.Tab.1.center" timestamp="1596293635739">
+    <state width="1493" height="84" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596894933721" />
+    <state width="1493" height="84" key="GridCell.Tab.1.center" timestamp="1596894933721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596293635739" />
-    <state width="1493" height="332" key="GridCell.Tab.1.left" timestamp="1596293635739">
+    <state width="1493" height="84" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596894933721" />
+    <state width="1493" height="84" key="GridCell.Tab.1.left" timestamp="1596894933720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596293635739" />
-    <state width="1493" height="332" key="GridCell.Tab.1.right" timestamp="1596293635739">
+    <state width="1493" height="84" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596894933720" />
+    <state width="1493" height="84" key="GridCell.Tab.1.right" timestamp="1596894933721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="332" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596293635739" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1594972376965">
+    <state width="1493" height="84" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596894933721" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1596556370926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594972376965" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1594972376965">
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596556370926" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1596556370926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1594972376965" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1594972376965">
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1596556370926" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1596556370926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1594972376965" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1594972376965">
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1596556370926" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1596556370926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1594972376965" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1596556370926" />
     <state x="63" y="55" width="1358" height="714" key="SettingsEditor" timestamp="1595988069447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="63" y="55" width="1358" height="714" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595988069447" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1596120003474">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1596890365873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596120003474" />
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595568821710">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596890365873" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596862307513">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1595568821710" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1596862307513" />
     <state x="447" y="145" width="642" height="534" key="find.popup" timestamp="1595909462015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,9 +451,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-54" y="200" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596285344551" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596191265841">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596792065699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596191265841" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596792065699" />
   </component>
 </project>

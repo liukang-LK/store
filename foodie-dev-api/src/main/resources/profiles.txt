@@ -6,11 +6,11 @@ profiles 多环境配置梳理：
     dev  可以打印
     test 可以打印
     prod 无需打印
-3. 图片保存目录 和 图片服务请求路径配置（没写）
+3. 图片保存目录 和 图片服务请求路径配置
     /workspaces/images/foodie/faces
-    http://api.z.mukewang.com:8088/foodie-dev-api/foodie/faces
-4. 从支付中心回调天天吃货后端服务的回调地址（没写）
-    http://api.z.mukewang.com:8088/foodie-dev-api/orders/notifyMerchantOrderPaid
+    http://api.z.liukang.space:8088/foodie-dev-api/foodie/faces
+4. 从支付中心回调天天吃货后端服务的回调地址
+    http://api.z.liukang.space:8088/foodie-dev-api/orders/notifyMerchantOrderPaid
 
 打包方式：
 1. jar

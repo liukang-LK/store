@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
+ * EnableScheduling注解   开启定时任务
  * MapperScan注解   扫描mybatis通用mapper所在的包
  * ComponentScan注解   扫描所有包以及相关组件包（不写则默认扫描此类所在的包）
  * springboot 会自动扫描入口类App所在的包，即com.kakarot
