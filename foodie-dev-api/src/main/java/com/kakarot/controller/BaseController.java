@@ -2,6 +2,8 @@ package com.kakarot.controller;
 
 import org.springframework.stereotype.Controller;
 
+import java.io.File;
+
 @Controller
 public class BaseController {
 
@@ -16,5 +18,15 @@ public class BaseController {
     // 微信支付成功 -> 支付中心 -> 天天吃货平台
     //                       |-> 回调通知的url
     String payReturnUrl = "http://uivxyc.natappfree.cc/orders/notifyMerchantOrderPaid";
+
+    // 用户上传头像的位置.
+    // 每个操作系统的分隔符不一样，比如windows是\
+    // 所以用File.separator来代替
+    public static final String IMAGE_USER_FACE_LOCATION = File.separator + "workspaces" +
+                                                            File.separator + "images" +
+                                                            File.separator + "foodie" +
+                                                            File.separator + "faces";
+
+//    public static final String IMAGE_USER_FACE_LOCATION = "/workspaces/images/foodie/faces";
 
 }
