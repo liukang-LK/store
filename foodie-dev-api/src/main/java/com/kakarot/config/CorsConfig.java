@@ -28,6 +28,7 @@ public class CorsConfig {
         config.addAllowedOrigin("http://center.z.liukang.space:8080");
         config.addAllowedOrigin("http://shop.z.liukang.space");
         config.addAllowedOrigin("http://center.z.liukang.space");
+        config.addAllowedOrigin("*");
 
         // 设置是否发送cookie信息
         config.setAllowCredentials(true);
