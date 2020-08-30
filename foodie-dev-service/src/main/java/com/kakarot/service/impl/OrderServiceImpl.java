@@ -6,6 +6,7 @@ import com.kakarot.mapper.OrderItemsMapper;
 import com.kakarot.mapper.OrderStatusMapper;
 import com.kakarot.mapper.OrdersMapper;
 import com.kakarot.pojo.*;
+import com.kakarot.pojo.bo.ShopcartBO;
 import com.kakarot.pojo.bo.SubmitOrderBO;
 import com.kakarot.pojo.vo.MerchantOrdersVO;
 import com.kakarot.pojo.vo.OrderVO;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -49,7 +51,7 @@ public class OrderServiceImpl implements OrderService {
      */
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
-    public OrderVO createOrder(SubmitOrderBO submitOrderBO) {
+    public OrderVO createOrder(List<ShopcartBO> shopcartList, SubmitOrderBO submitOrderBO) {
 
         String userId = submitOrderBO.getUserId();
         String addressId = submitOrderBO.getAddressId();
@@ -90,10 +92,14 @@ public class OrderServiceImpl implements OrderService {
         String[] itemSpecIdArr = itemSpecIds.split(",");
         Integer totalAmount = 0;    // 商品原价累计
         Integer realPayAmount = 0;  // 优惠后的实际支付价格累计
+        //生成的订单，即redis里待删除的数据
+        List<ShopcartBO> toBeRemovedShopCartList = new ArrayList<>();
         for (String itemSpecId : itemSpecIdArr) {
 
-            // TODO 整合redis后，商品购买的数量重新从redis的购物车中获取
-            int buyCounts = 1;
+            //整合redis后，商品购买的数量重新从redis的购物车中获取
+            ShopcartBO cartItem = getBuyCountsFromShopcart(shopcartList, itemSpecId);
+            int buyCounts = cartItem.getBuyCounts();
+            toBeRemovedShopCartList.add(cartItem);
 
             // 2.1 根据规格id，查询规格的具体信息，主要获取价格
             ItemsSpec itemSpec = itemService.queryItemSpecById(itemSpecId);
@@ -146,8 +152,22 @@ public class OrderServiceImpl implements OrderService {
         OrderVO orderVO = new OrderVO();
         orderVO.setOrderId(orderId);
         orderVO.setMerchantOrdersVO(merchantOrdersVO);
+        orderVO.setToBeRemovedShopCartList(toBeRemovedShopCartList);
 
         return orderVO;
+    }
+
+    /**
+     * 从redis中的购物车里获取商品，即根据id查找购物车里是否有此商品
+     * 目的：counts
+     */
+    private ShopcartBO getBuyCountsFromShopcart(List<ShopcartBO> shopcartList,String specId){
+        for(ShopcartBO sc:shopcartList){
+            if(sc.getSpecId().equals(specId)){
+                return sc;
+            }
+        }
+        return null;
     }
 
     /**
